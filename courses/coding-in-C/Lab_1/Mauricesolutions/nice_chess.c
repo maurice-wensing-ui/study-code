@@ -39,18 +39,12 @@ int main()
             printf("+\n");
     }
 
-/*----------------------------------------------------------------*/
-// SChleife für Zeilen
-/*----------------------------------------------------------------*/
-
-for (intZeilen  = 2; intZeilen  >= 1; intZeilen--)
-{
-
+    
 /*----------------------------------------------------------------*/
 // Schleife für Spalten
 /*----------------------------------------------------------------*/
 
-for (intZeilenNummer = 1; intZeilenNummer <= 9; intZeilenNummer++)
+for (intZeilenNummer = 1; intZeilenNummer < 17; intZeilenNummer++)
 {
     if (inti%2 == 1) // Zeile mit Nummerirung
     {
@@ -81,7 +75,7 @@ for (intZeilenNummer = 1; intZeilenNummer <= 9; intZeilenNummer++)
         } 
 
     /*----------------------------------------------------------------*/
-    // Zeilen nummerireung hinten
+    // Zeilen nummerierung hinten
     /*----------------------------------------------------------------*/
 
         printf("  %d  |\n", intVariable);
@@ -105,7 +99,6 @@ for (intZeilenNummer = 1; intZeilenNummer <= 9; intZeilenNummer++)
 
     }
 
-}
 
 /*----------------------------------------------------------------*/
 // Untere Beschriftung
