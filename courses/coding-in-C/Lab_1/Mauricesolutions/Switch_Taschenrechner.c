@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-
-
 float a;
 float b;
 float c;
@@ -14,7 +12,7 @@ char operator;
 void einlesen()
 {
     printf("Welche Operation möchten Sie durchführen?(+, -, *, /)\n");
-    scanf(" %c", &operator);
+    scanf(" %c", &operator); //Leerzeichen für
 
     printf("Geben Sie die 1. Zahl an.\n");
     scanf("%f", &a);
@@ -23,35 +21,33 @@ void einlesen()
     scanf("%f", &b);
 };
 
-
 /*----------------------------------------------------------------*/
 // Operator auswahl
 /*----------------------------------------------------------------*/
 void operator_auswahl()
 {
-switch (operator)
-{
-case '+':
-    c = a + b;
-    break;
+    switch (operator)
+    {
+    case '+':
+        c = a + b;
+        break;
 
-case '-':
-    c = a - b;
-    break;
+    case '-':
+        c = a - b;
+        break;
 
-case '*':
-    c = a * b;
-    break;
+    case '*':
+        c = a * b;
+        break;
 
-case '/':
-    c = a / b;
-    break;
+    case '/':
+        c = a / b;
+        break;
 
-default:
-    printf("Ungültiger Operator.");
-    break;
-
-}    
+    default:
+        printf("Ungültiger Operator.");
+        break;
+    }
 }
 
 /*----------------------------------------------------------------*/
@@ -61,15 +57,13 @@ default:
 void ausgabe()
 {
 
-    if (b == 0 &&
-             operator == '/')
+    if (b == 0 && operator == '/')
     {
         printf("Mit 0 kann nicht geteilt werden.");
     }
     else
-    printf("%f %c %f = %f",a, operator, b, c);
+        printf("%f %c %f = %f", a, operator, b, c);
 };
-
 
 /*----------------------------------------------------------------*/
 // Main
@@ -78,13 +72,11 @@ void ausgabe()
 int main()
 {
 
-einlesen();
+    einlesen();
 
-operator_auswahl();
+    operator_auswahl();
 
+    ausgabe();
 
-ausgabe();
-
-return 0;
-
+    return 0;
 }
